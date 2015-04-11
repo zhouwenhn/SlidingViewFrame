@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_two"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+    
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            style="@style/RadioGroupItemStyle"
+            android:drawableTop="@drawable/tab_chat_selector"
+            android:text="微信" />
+
+        <RadioButton
+            android:id="@+id/rb_contacts"
+            style="@style/RadioGroupItemStyle"
+            android:drawableTop="@drawable/tab_contacts_selector"
+            android:text="通讯录" />
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/RadioGroupItemStyle"
+            android:drawableTop="@drawable/tab_find_selector"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_personal"
+            style="@style/RadioGroupItemStyle"
+            android:drawableTop="@drawable/tab_personal_selector"
+            android:text="我" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/line_bottom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:baselineAlignBottom="true"
+        android:visibility="gone"
+        android:src="@drawable/settings_select_bg_bg" />
+
+</LinearLayout>
